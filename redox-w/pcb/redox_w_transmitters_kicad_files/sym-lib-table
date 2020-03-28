@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name redox_rev1-rescue)(type Legacy)(uri ${KIPRJMOD}/redox_rev1-rescue.lib)(options "")(descr ""))
+  (lib (name redox_wired)(type Legacy)(uri /home/gareth/Downloads/redox-keyboard/redox-w/pcb/redox_w_transmitters_kicad_files/redox_wired.lib)(options "")(descr ""))
+)
