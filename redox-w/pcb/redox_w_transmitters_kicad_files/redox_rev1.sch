@@ -1626,7 +1626,7 @@ L Device:Battery_Cell BT_LEFT1
 U 1 1 5E8D8C81
 P 7100 5850
 F 0 "BT_LEFT1" H 7218 5946 50  0000 L CNN
-F 1 "Battery_Cel" H 7218 5855 50  0000 L CNN
+F 1 "Battery_Cell" H 7218 5855 50  0000 L CNN
 F 2 "redox_w_footprints:BatteryHolder_Keystone_3034_1x20mm" V 7100 5910 50  0001 C CNN
 F 3 "~" V 7100 5910 50  0001 C CNN
 	1    7100 5850
