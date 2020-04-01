@@ -1120,7 +1120,6 @@ NoConn ~ 3000 4450
 NoConn ~ 1500 4900
 NoConn ~ 1600 4900
 NoConn ~ 1700 4900
-NoConn ~ 1800 4900
 NoConn ~ 1100 4150
 NoConn ~ 1100 4250
 Text GLabel 3000 3650 2    60   Input ~ 0
@@ -1187,18 +1186,6 @@ SDA1
 Text GLabel 1100 1200 0    60   Input ~ 0
 SCL1
 NoConn ~ 1700 2550
-$Comp
-L redox_rev1-rescue:Core51822B-core51822b U_LEFT1
-U 1 1 5B82A707
-P 2050 3850
-F 0 "U_LEFT1" H 2050 4737 60  0000 C CNN
-F 1 "Core51822B" H 2050 4631 60  0000 C CNN
-F 2 "redox_w_footprints:MY-YJ-14015-Module" H 2050 3950 60  0001 C CNN
-F 3 "" H 2050 3950 60  0001 C CNN
-	1    2050 3850
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2300 2550
 Text GLabel 2200 2550 3    60   Input ~ 0
 col6
 Text GLabel 2100 2550 3    60   Input ~ 0
@@ -1282,202 +1269,6 @@ F 3 "~" H 3900 3250 50  0001 C CNN
 	1    3900 3250
 	1    0    0    -1  
 $EndComp
-Text GLabel 4750 2300 2    60   Input ~ 0
-VCC1
-Connection ~ 4950 6050
-Wire Wire Line
-	2400 6050 4950 6050
-Wire Wire Line
-	5300 6050 5400 6050
-Connection ~ 5300 6050
-Wire Wire Line
-	5300 6050 5300 6100
-Wire Wire Line
-	5250 6050 5300 6050
-Wire Wire Line
-	5300 6400 5400 6400
-Connection ~ 5300 6400
-$Comp
-L Jumper:SolderJumper_2_Bridged JP_RIGHT2
-U 1 1 5E849C59
-P 5300 6250
-F 0 "JP_RIGHT2" V 5346 6162 50  0000 R CNN
-F 1 "SolderJumper_2_Bridged" V 5255 6162 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 5300 6250 50  0001 C CNN
-F 3 "~" H 5300 6250 50  0001 C CNN
-	1    5300 6250
-	0    -1   -1   0   
-$EndComp
-Connection ~ 4950 6400
-Wire Wire Line
-	4950 6400 4950 6050
-$Comp
-L Jumper:SolderJumper_2_Open JP_RIGHT1
-U 1 1 5EFC12BE
-P 5100 6050
-F 0 "JP_RIGHT1" H 5100 6255 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 5100 6164 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 5100 6050 50  0001 C CNN
-F 3 "~" H 5100 6050 50  0001 C CNN
-	1    5100 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 6400 4950 6400
-Text GLabel 5400 6050 2    60   Input ~ 0
-VCC1
-$Comp
-L power:GND #PWR0111
-U 1 1 5B8C07FC
-P 3100 7300
-F 0 "#PWR0111" H 3100 7050 50  0001 C CNN
-F 1 "GND" H 3105 7127 50  0000 C CNN
-F 2 "" H 3100 7300 50  0001 C CNN
-F 3 "" H 3100 7300 50  0001 C CNN
-	1    3100 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0110
-U 1 1 5E927DEA
-P 5400 6400
-F 0 "#PWR0110" H 5400 6250 50  0001 C CNN
-F 1 "VCC" V 5417 6528 50  0000 L CNN
-F 2 "" H 5400 6400 50  0001 C CNN
-F 3 "" H 5400 6400 50  0001 C CNN
-	1    5400 6400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4100 6700 4500 6700
-Wire Wire Line
-	4700 6400 4800 6400
-Wire Wire Line
-	4500 7000 4800 7000
-Wire Wire Line
-	4800 7000 4800 6400
-Connection ~ 4800 6400
-$Comp
-L Power_Management:LTC4412xS6 U_RIGHT3
-U 1 1 5E8E4F32
-P 4100 7100
-F 0 "U_RIGHT3" H 4100 7681 50  0000 C CNN
-F 1 "LTC4412xS6" H 4100 7590 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 4750 6750 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf" H 6200 6900 50  0001 C CNN
-	1    4100 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0112
-U 1 1 5EAFC04F
-P 4100 7500
-F 0 "#PWR0112" H 4100 7250 50  0001 C CNN
-F 1 "GND" H 4105 7327 50  0000 C CNN
-F 2 "" H 4100 7500 50  0001 C CNN
-F 3 "" H 4100 7500 50  0001 C CNN
-	1    4100 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0113
-U 1 1 5EB2C41C
-P 5150 6700
-F 0 "#PWR0113" H 5150 6450 50  0001 C CNN
-F 1 "GND" H 5155 6527 50  0000 C CNN
-F 2 "" H 5150 6700 50  0001 C CNN
-F 3 "" H 5150 6700 50  0001 C CNN
-	1    5150 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 5EA52BA4
-P 3700 7300
-F 0 "#PWR0114" H 3700 7050 50  0001 C CNN
-F 1 "GND" H 3705 7127 50  0000 C CNN
-F 2 "" H 3700 7300 50  0001 C CNN
-F 3 "" H 3700 7300 50  0001 C CNN
-	1    3700 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 7200 3700 7300
-NoConn ~ 4500 7200
-NoConn ~ 3200 6600
-$Comp
-L Switch:SW_SPDT SW_RIGHT1
-U 1 1 5B8C0802
-P 3100 6800
-F 0 "SW_RIGHT1" V 3146 6612 50  0000 R CNN
-F 1 "SW_SPDT" V 3055 6612 50  0000 R CNN
-F 2 "redox_w_footprints:SW_SPDT_CK-JS102011SAQN" H 3100 6800 50  0001 C CNN
-F 3 "" H 3100 6800 50  0001 C CNN
-	1    3100 6800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Battery_Cell BT_RIGHT1
-U 1 1 5B8C07F6
-P 3100 7200
-F 0 "BT_RIGHT1" H 3218 7296 50  0000 L CNN
-F 1 "Battery_Cell" H 3218 7205 50  0000 L CNN
-F 2 "redox_w_footprints:BatteryHolder_Keystone_3034_1x20mm" V 3100 7260 50  0001 C CNN
-F 3 "~" V 3100 7260 50  0001 C CNN
-	1    3100 7200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 7000 3100 7000
-Connection ~ 3100 7000
-Wire Wire Line
-	3000 6600 3000 6400
-Wire Wire Line
-	3000 6400 4300 6400
-$Comp
-L redox_wired:ProMicro U_RIGHT2
-U 1 1 5E7DC5DE
-P 1700 6300
-F 0 "U_RIGHT2" H 1700 7137 60  0000 C CNN
-F 1 "ProMicro" H 1700 7031 60  0000 C CNN
-F 2 "redox_w_footprints:ArduinoProMicro" V 2750 3800 60  0001 C CNN
-F 3 "" V 2750 3800 60  0001 C CNN
-	1    1700 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 5E7F4053
-P 1000 6050
-F 0 "#PWR0115" H 1000 5800 50  0001 C CNN
-F 1 "GND" V 1005 5922 50  0000 R CNN
-F 2 "" H 1000 6050 50  0001 C CNN
-F 3 "" H 1000 6050 50  0001 C CNN
-	1    1000 6050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0116
-U 1 1 5E7F3BC0
-P 1000 5950
-F 0 "#PWR0116" H 1000 5700 50  0001 C CNN
-F 1 "GND" V 1005 5822 50  0000 R CNN
-F 2 "" H 1000 5950 50  0001 C CNN
-F 3 "" H 1000 5950 50  0001 C CNN
-	1    1000 5950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0117
-U 1 1 5E7F378F
-P 2400 5850
-F 0 "#PWR0117" H 2400 5600 50  0001 C CNN
-F 1 "GND" V 2405 5722 50  0000 R CNN
-F 2 "" H 2400 5850 50  0001 C CNN
-F 3 "" H 2400 5850 50  0001 C CNN
-	1    2400 5850
-	0    -1   -1   0   
-$EndComp
 Text GLabel 1900 4900 3    60   Input ~ 0
 col6
 Text GLabel 2000 4900 3    60   Input ~ 0
@@ -1492,153 +1283,6 @@ Text GLabel 2500 4900 3    60   Input ~ 0
 col1
 Text GLabel 2600 4900 3    60   Input ~ 0
 col0
-Wire Wire Line
-	9300 4700 9400 4700
-Connection ~ 9300 4700
-Wire Wire Line
-	9300 4700 9300 4750
-Wire Wire Line
-	9250 4700 9300 4700
-Wire Wire Line
-	9300 5050 9400 5050
-Connection ~ 9300 5050
-$Comp
-L Jumper:SolderJumper_2_Bridged JP_LEFT1
-U 1 1 5E8D8C31
-P 9100 4700
-F 0 "JP_LEFT1" H 9100 4905 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 9100 4814 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 9100 4700 50  0001 C CNN
-F 3 "~" H 9100 4700 50  0001 C CNN
-	1    9100 4700
-	1    0    0    -1  
-$EndComp
-Connection ~ 8950 5050
-Wire Wire Line
-	8950 5050 8950 4700
-$Comp
-L Jumper:SolderJumper_2_Open JP_LEFT2
-U 1 1 5E8D8C3A
-P 9300 4900
-F 0 "JP_LEFT2" V 9346 4812 50  0000 R CNN
-F 1 "SolderJumper_2_Open" V 9255 4812 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 9300 4900 50  0001 C CNN
-F 3 "~" H 9300 4900 50  0001 C CNN
-	1    9300 4900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8800 5050 8950 5050
-Text GLabel 9400 4700 2    60   Input ~ 0
-VCC0
-$Comp
-L power:GND #PWR0118
-U 1 1 5E8D8C42
-P 7100 5950
-F 0 "#PWR0118" H 7100 5700 50  0001 C CNN
-F 1 "GND" H 7105 5777 50  0000 C CNN
-F 2 "" H 7100 5950 50  0001 C CNN
-F 3 "" H 7100 5950 50  0001 C CNN
-	1    7100 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0119
-U 1 1 5E8D8C48
-P 9400 5050
-F 0 "#PWR0119" H 9400 4900 50  0001 C CNN
-F 1 "VCC" V 9417 5178 50  0000 L CNN
-F 2 "" H 9400 5050 50  0001 C CNN
-F 3 "" H 9400 5050 50  0001 C CNN
-	1    9400 5050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8100 5350 8500 5350
-Wire Wire Line
-	8700 5050 8800 5050
-Wire Wire Line
-	8500 5650 8800 5650
-Wire Wire Line
-	8800 5650 8800 5050
-Connection ~ 8800 5050
-$Comp
-L Power_Management:LTC4412xS6 U_LEFT2
-U 1 1 5E8D8C59
-P 8100 5750
-F 0 "U_LEFT2" H 8100 6331 50  0000 C CNN
-F 1 "LTC4412xS6" H 8100 6240 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 8750 5400 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf" H 10200 5550 50  0001 C CNN
-	1    8100 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0120
-U 1 1 5E8D8C5F
-P 8100 6150
-F 0 "#PWR0120" H 8100 5900 50  0001 C CNN
-F 1 "GND" H 8105 5977 50  0000 C CNN
-F 2 "" H 8100 6150 50  0001 C CNN
-F 3 "" H 8100 6150 50  0001 C CNN
-	1    8100 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 5E8D8C6B
-P 9150 5350
-F 0 "#PWR0121" H 9150 5100 50  0001 C CNN
-F 1 "GND" H 9155 5177 50  0000 C CNN
-F 2 "" H 9150 5350 50  0001 C CNN
-F 3 "" H 9150 5350 50  0001 C CNN
-	1    9150 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 5E8D8C72
-P 7700 5950
-F 0 "#PWR0122" H 7700 5700 50  0001 C CNN
-F 1 "GND" H 7705 5777 50  0000 C CNN
-F 2 "" H 7700 5950 50  0001 C CNN
-F 3 "" H 7700 5950 50  0001 C CNN
-	1    7700 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 5850 7700 5950
-NoConn ~ 8500 5850
-NoConn ~ 7200 5250
-$Comp
-L Switch:SW_SPDT SW_LEFT1
-U 1 1 5E8D8C7B
-P 7100 5450
-F 0 "SW_LEFT1" V 7146 5262 50  0000 R CNN
-F 1 "SW_SPDT" V 7055 5262 50  0000 R CNN
-F 2 "redox_w_footprints:SW_SPDT_CK-JS102011SAQN" H 7100 5450 50  0001 C CNN
-F 3 "" H 7100 5450 50  0001 C CNN
-	1    7100 5450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Battery_Cell BT_LEFT1
-U 1 1 5E8D8C81
-P 7100 5850
-F 0 "BT_LEFT1" H 7218 5946 50  0000 L CNN
-F 1 "Battery_Cell" H 7218 5855 50  0000 L CNN
-F 2 "redox_w_footprints:BatteryHolder_Keystone_3034_1x20mm" V 7100 5910 50  0001 C CNN
-F 3 "~" V 7100 5910 50  0001 C CNN
-	1    7100 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 5650 7100 5650
-Wire Wire Line
-	7000 5050 8300 5050
-Wire Wire Line
-	7000 5050 7000 5250
-Connection ~ 7100 5650
 $Comp
 L power:VCC #PWR0123
 U 1 1 5E9D0313
@@ -1673,60 +1317,6 @@ Wire Wire Line
 	3950 2100 4250 2100
 Wire Wire Line
 	4450 2200 4750 2200
-$Comp
-L Transistor_FET:DMG2301L Q_RIGHT1
-U 1 1 5EAA3F74
-P 4500 6500
-F 0 "Q_RIGHT1" V 4842 6500 50  0000 C CNN
-F 1 "DMG2301L" V 4751 6500 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4700 6425 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf" H 4500 6500 50  0001 L CNN
-	1    4500 6500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Transistor_FET:DMG2301L Q_LEFT1
-U 1 1 5EAB6B43
-P 8500 5150
-F 0 "Q_LEFT1" V 8842 5150 50  0000 C CNN
-F 1 "DMG2301L" V 8751 5150 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 5075 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf" H 8500 5150 50  0001 L CNN
-	1    8500 5150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4950 6400 5150 6400
-$Comp
-L Device:C C_RIGHT1
-U 1 1 5EAEA3B5
-P 5150 6550
-F 0 "C_RIGHT1" H 5265 6596 50  0000 L CNN
-F 1 "1 μF" H 5265 6505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5188 6400 50  0001 C CNN
-F 3 "~" H 5150 6550 50  0001 C CNN
-	1    5150 6550
-	1    0    0    -1  
-$EndComp
-Connection ~ 5150 6400
-Wire Wire Line
-	5150 6400 5300 6400
-Wire Wire Line
-	8950 5050 9150 5050
-$Comp
-L Device:C C_LEFT1
-U 1 1 5EAEFF7E
-P 9150 5200
-F 0 "C_LEFT1" H 9265 5246 50  0000 L CNN
-F 1 "1 μF" H 9265 5155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9188 5050 50  0001 C CNN
-F 3 "~" H 9150 5200 50  0001 C CNN
-	1    9150 5200
-	1    0    0    -1  
-$EndComp
-Connection ~ 9150 5050
-Wire Wire Line
-	9150 5050 9300 5050
 Text GLabel 3000 1100 2    60   Input ~ 0
 SDA2
 Text GLabel 3000 1200 2    60   Input ~ 0
@@ -1737,28 +1327,6 @@ SDA2
 Text GLabel 1100 3550 0    60   Input ~ 0
 SCL2
 NoConn ~ 1100 3650
-Text GLabel 1000 6150 0    60   Input ~ 0
-SDA2
-Text GLabel 1000 6250 0    60   Input ~ 0
-SCL2
-NoConn ~ 1000 5750
-NoConn ~ 1000 5850
-NoConn ~ 1000 6350
-NoConn ~ 1000 6450
-NoConn ~ 1000 6550
-NoConn ~ 1000 6650
-NoConn ~ 1000 6750
-NoConn ~ 1000 6850
-NoConn ~ 2400 5750
-NoConn ~ 2400 5950
-NoConn ~ 2400 6150
-NoConn ~ 2400 6250
-NoConn ~ 2400 6350
-NoConn ~ 2400 6450
-NoConn ~ 2400 6550
-NoConn ~ 2400 6650
-NoConn ~ 2400 6750
-NoConn ~ 2400 6850
 $Comp
 L redox_rev1-rescue:Core51822B-core51822b U_RIGHT1
 U 1 1 5B82A47C
@@ -1807,4 +1375,367 @@ F 3 "~" H 3750 2100 50  0001 C CNN
 	1    3750 2100
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5E8D8C42
+P 6550 7350
+F 0 "#PWR0118" H 6550 7100 50  0001 C CNN
+F 1 "GND" H 6555 7177 50  0000 C CNN
+F 2 "" H 6550 7350 50  0001 C CNN
+F 3 "" H 6550 7350 50  0001 C CNN
+	1    6550 7350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 6750 5150 6750
+Wire Wire Line
+	4950 6450 4850 6450
+Wire Wire Line
+	5150 7050 4850 7050
+$Comp
+L Power_Management:LTC4412xS6 U_LEFT2
+U 1 1 5E8D8C59
+P 5550 7150
+F 0 "U_LEFT2" H 5550 7731 50  0000 C CNN
+F 1 "LTC4412xS6" H 5550 7640 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 6200 6800 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf" H 7650 6950 50  0001 C CNN
+	1    5550 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5E8D8C5F
+P 5550 7550
+F 0 "#PWR0120" H 5550 7300 50  0001 C CNN
+F 1 "GND" H 5555 7377 50  0000 C CNN
+F 2 "" H 5550 7550 50  0001 C CNN
+F 3 "" H 5550 7550 50  0001 C CNN
+	1    5550 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5E8D8C72
+P 5950 7350
+F 0 "#PWR0122" H 5950 7100 50  0001 C CNN
+F 1 "GND" H 5955 7177 50  0000 C CNN
+F 2 "" H 5950 7350 50  0001 C CNN
+F 3 "" H 5950 7350 50  0001 C CNN
+	1    5950 7350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 7250 5950 7350
+NoConn ~ 6450 6650
+$Comp
+L Switch:SW_SPDT SW_LEFT1
+U 1 1 5E8D8C7B
+P 6550 6850
+F 0 "SW_LEFT1" V 6596 6662 50  0000 R CNN
+F 1 "SW_SPDT" V 6505 6662 50  0000 R CNN
+F 2 "redox_w_footprints:SW_SPDT_CK-JS102011SAQN" H 6550 6850 50  0001 C CNN
+F 3 "" H 6550 6850 50  0001 C CNN
+	1    6550 6850
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT_LEFT1
+U 1 1 5E8D8C81
+P 6550 7250
+F 0 "BT_LEFT1" H 6668 7346 50  0000 L CNN
+F 1 "Battery_Cell" H 6668 7255 50  0000 L CNN
+F 2 "redox_w_footprints:BatteryHolder_Keystone_3034_1x20mm" V 6550 7310 50  0001 C CNN
+F 3 "~" V 6550 7310 50  0001 C CNN
+	1    6550 7250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 7050 6550 7050
+Wire Wire Line
+	6650 6450 5350 6450
+Wire Wire Line
+	6650 6450 6650 6650
+Connection ~ 6550 7050
+$Comp
+L Transistor_FET:DMG2301L Q_LEFT1
+U 1 1 5EAB6B43
+P 5150 6550
+F 0 "Q_LEFT1" V 5492 6550 50  0000 C CNN
+F 1 "DMG2301L" V 5401 6550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5350 6475 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf" H 5150 6550 50  0001 L CNN
+	1    5150 6550
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5EAFC04F
+P 5550 5950
+F 0 "#PWR0112" H 5550 5700 50  0001 C CNN
+F 1 "GND" H 5555 5777 50  0000 C CNN
+F 2 "" H 5550 5950 50  0001 C CNN
+F 3 "" H 5550 5950 50  0001 C CNN
+	1    5550 5950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4850 4550 4850
+Connection ~ 4700 4850
+Wire Wire Line
+	4850 4850 4700 4850
+$Comp
+L power:GND #PWR0110
+U 1 1 5EA69E1C
+P 4700 5150
+F 0 "#PWR0110" H 4700 4900 50  0001 C CNN
+F 1 "GND" H 4705 4977 50  0000 C CNN
+F 2 "" H 4700 5150 50  0001 C CNN
+F 3 "" H 4700 5150 50  0001 C CNN
+	1    4700 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C_1
+U 1 1 5EA69E16
+P 4700 5000
+F 0 "C_1" H 4815 5046 50  0000 L CNN
+F 1 "1 μF" H 4815 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4738 4850 50  0001 C CNN
+F 3 "~" H 4700 5000 50  0001 C CNN
+	1    4700 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0113
+U 1 1 5EA65BA5
+P 4550 4850
+F 0 "#PWR0113" H 4550 4700 50  0001 C CNN
+F 1 "VCC" V 4567 4978 50  0000 L CNN
+F 2 "" H 4550 4850 50  0001 C CNN
+F 3 "" H 4550 4850 50  0001 C CNN
+	1    4550 4850
+	0    -1   1    0   
+$EndComp
+Connection ~ 4850 4850
+NoConn ~ 3700 6900
+NoConn ~ 3700 6800
+NoConn ~ 3700 6700
+NoConn ~ 3700 6600
+NoConn ~ 3700 6500
+NoConn ~ 3700 6400
+NoConn ~ 3700 6300
+NoConn ~ 3700 6200
+NoConn ~ 3700 6000
+NoConn ~ 3700 5800
+NoConn ~ 2300 6900
+NoConn ~ 2300 6800
+NoConn ~ 2300 6700
+NoConn ~ 2300 6600
+NoConn ~ 2300 6500
+NoConn ~ 2300 6400
+NoConn ~ 2300 5900
+NoConn ~ 2300 5800
+Text GLabel 2300 6300 0    60   Input ~ 0
+SCL2
+Text GLabel 2300 6200 0    60   Input ~ 0
+SDA2
+$Comp
+L Transistor_FET:DMG2301L Q_RIGHT1
+U 1 1 5EAA3F74
+P 5150 4950
+F 0 "Q_RIGHT1" V 5492 4950 50  0000 C CNN
+F 1 "DMG2301L" V 5401 4950 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5350 4875 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf" H 5150 4950 50  0001 L CNN
+	1    5150 4950
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5E7F378F
+P 3700 5900
+F 0 "#PWR0117" H 3700 5650 50  0001 C CNN
+F 1 "GND" V 3705 5772 50  0000 R CNN
+F 2 "" H 3700 5900 50  0001 C CNN
+F 3 "" H 3700 5900 50  0001 C CNN
+	1    3700 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5E7F3BC0
+P 2300 6000
+F 0 "#PWR0116" H 2300 5750 50  0001 C CNN
+F 1 "GND" V 2305 5872 50  0000 R CNN
+F 2 "" H 2300 6000 50  0001 C CNN
+F 3 "" H 2300 6000 50  0001 C CNN
+	1    2300 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5E7F4053
+P 2300 6100
+F 0 "#PWR0115" H 2300 5850 50  0001 C CNN
+F 1 "GND" V 2305 5972 50  0000 R CNN
+F 2 "" H 2300 6100 50  0001 C CNN
+F 3 "" H 2300 6100 50  0001 C CNN
+	1    2300 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L redox_wired:ProMicro U_LEFT3
+U 1 1 5E7DC5DE
+P 3000 6350
+F 0 "U_LEFT3" H 3000 7187 60  0000 C CNN
+F 1 "ProMicro" H 3000 7081 60  0000 C CNN
+F 2 "redox_w_footprints:ArduinoProMicro" V 4050 3850 60  0001 C CNN
+F 3 "" V 4050 3850 60  0001 C CNN
+	1    3000 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4850 5350 4850
+Wire Wire Line
+	6650 5050 6650 4850
+Connection ~ 6550 5450
+Wire Wire Line
+	5950 5450 6550 5450
+$Comp
+L Device:Battery_Cell BT_RIGHT1
+U 1 1 5B8C07F6
+P 6550 5650
+F 0 "BT_RIGHT1" H 6668 5746 50  0000 L CNN
+F 1 "Battery_Cell" H 6668 5655 50  0000 L CNN
+F 2 "redox_w_footprints:BatteryHolder_Keystone_3034_1x20mm" V 6550 5710 50  0001 C CNN
+F 3 "~" V 6550 5710 50  0001 C CNN
+	1    6550 5650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW_RIGHT1
+U 1 1 5B8C0802
+P 6550 5250
+F 0 "SW_RIGHT1" V 6596 5062 50  0000 R CNN
+F 1 "SW_SPDT" V 6505 5062 50  0000 R CNN
+F 2 "redox_w_footprints:SW_SPDT_CK-JS102011SAQN" H 6550 5250 50  0001 C CNN
+F 3 "" H 6550 5250 50  0001 C CNN
+	1    6550 5250
+	0    1    -1   0   
+$EndComp
+NoConn ~ 6450 5050
+Wire Wire Line
+	5950 5650 5950 5750
+$Comp
+L power:GND #PWR0114
+U 1 1 5EA52BA4
+P 5950 5750
+F 0 "#PWR0114" H 5950 5500 50  0001 C CNN
+F 1 "GND" H 5955 5577 50  0000 C CNN
+F 2 "" H 5950 5750 50  0001 C CNN
+F 3 "" H 5950 5750 50  0001 C CNN
+	1    5950 5750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Power_Management:LTC4412xS6 U_RIGHT2
+U 1 1 5E8E4F32
+P 5550 5550
+F 0 "U_RIGHT2" H 5550 6131 50  0000 C CNN
+F 1 "LTC4412xS6" H 5550 6040 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 6200 5200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf" H 7650 5350 50  0001 C CNN
+	1    5550 5550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5450 4850 4850
+Wire Wire Line
+	5150 5450 4850 5450
+Wire Wire Line
+	4950 4850 4850 4850
+Wire Wire Line
+	5550 5150 5150 5150
+$Comp
+L power:GND #PWR0111
+U 1 1 5B8C07FC
+P 6550 5750
+F 0 "#PWR0111" H 6550 5500 50  0001 C CNN
+F 1 "GND" H 6555 5577 50  0000 C CNN
+F 2 "" H 6550 5750 50  0001 C CNN
+F 3 "" H 6550 5750 50  0001 C CNN
+	1    6550 5750
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4850 5450
+$Comp
+L power:VCC #PWR0119
+U 1 1 5ED9A31E
+P 4750 2300
+F 0 "#PWR0119" H 4750 2150 50  0001 C CNN
+F 1 "VCC" V 4767 2428 50  0000 L CNN
+F 2 "" H 4750 2300 50  0001 C CNN
+F 3 "" H 4750 2300 50  0001 C CNN
+	1    4750 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L redox_rev1-rescue:Core51822B-core51822b U_LEFT1
+U 1 1 5B82A707
+P 2050 3850
+F 0 "U_LEFT1" H 2050 4737 60  0000 C CNN
+F 1 "Core51822B" H 2050 4631 60  0000 C CNN
+F 2 "redox_w_footprints:MY-YJ-14015-Module" H 2050 3950 60  0001 C CNN
+F 3 "" H 2050 3950 60  0001 C CNN
+	1    2050 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 4900 3    60   Input ~ 0
+ON_BATT
+Text GLabel 2300 2550 3    60   Input ~ 0
+ON_BATT
+Wire Wire Line
+	4850 5450 4850 6100
+Wire Wire Line
+	3700 6100 4850 6100
+Connection ~ 4850 6100
+Wire Wire Line
+	4850 6100 4850 6450
+Connection ~ 4850 6450
+Wire Wire Line
+	4850 6450 4850 7050
+Text GLabel 4050 7250 0    60   Input ~ 0
+ON_BATT
+$Comp
+L Device:R R3
+U 1 1 5E8D3607
+P 4450 7400
+F 0 "R3" H 4520 7354 50  0000 L CNN
+F 1 "4.7k" H 4520 7445 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4380 7400 50  0001 C CNN
+F 3 "~" H 4450 7400 50  0001 C CNN
+	1    4450 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E8D360D
+P 4450 7550
+F 0 "#PWR?" H 4450 7400 50  0001 C CNN
+F 1 "VCC" H 4468 7723 50  0000 C CNN
+F 2 "" H 4450 7550 50  0001 C CNN
+F 3 "" H 4450 7550 50  0001 C CNN
+	1    4450 7550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5150 7250 4450 7250
+Connection ~ 4450 7250
+Wire Wire Line
+	4450 7250 4050 7250
+Wire Wire Line
+	5150 5650 4450 5650
+Wire Wire Line
+	4450 5650 4450 7250
 $EndSCHEMATC
