@@ -2743,7 +2743,7 @@
       (net 34 row4) (solder_mask_margin -999))
   )
 
-  (module keyboard_parts:HOLE_M3 (layer F.Cu) (tedit 0) (tstamp 5A87167E)
+  (module keyboard_parts:HOLE_M3 (layer F.Cu) (tedit 0) (tstamp 5E8630E3)
     (at 102.87 128.905)
     (fp_text reference HOLE_M3 (at 0 -4.5) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3048)))
@@ -2755,7 +2755,7 @@
   )
 
   (module myparts:redox-logo (layer F.Cu) (tedit 0) (tstamp 5A884522)
-    (at 122.428 96.52 90)
+    (at 101.9302 102.7684 90)
     (fp_text reference G*** (at 0 0 90) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
@@ -2940,8 +2940,8 @@
       (xy 19.22816 -3.085521) (xy 19.230668 -3.087024) (xy 19.444758 -3.215434) (xy 19.7047 -2.705904)) (layer F.SilkS) (width 0.01))
   )
 
-  (module myparts:redox-logo (layer B.Cu) (tedit 0) (tstamp 5A8845F5)
-    (at 122.936 96.52 270)
+  (module myparts:redox-logo (layer B.Cu) (tedit 0) (tstamp 5E861A92)
+    (at 101.9302 102.8192 270)
     (fp_text reference G*** (at 0 0 270) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
@@ -3250,7 +3250,7 @@
       (net 25 "Net-(D30-Pad2)"))
   )
 
-  (module myparts:Mx_Alps_125-dualside (layer F.Cu) (tedit 5AED7DC8) (tstamp 5A80A4D7)
+  (module myparts:Mx_Alps_125-dualside (layer F.Cu) (tedit 5AED7DC8) (tstamp 5E8632ED)
     (at 91.44 104.775)
     (descr MXALPS)
     (tags MXALPS)
@@ -3312,7 +3312,7 @@
       (net 17 "Net-(D20-Pad2)"))
   )
 
-  (module myparts:Mx_Alps_125-dualside (layer F.Cu) (tedit 5AED7DC8) (tstamp 5A80A452)
+  (module myparts:Mx_Alps_125-dualside (layer F.Cu) (tedit 5AED7DC8) (tstamp 5E862D01)
     (at 91.44 85.725)
     (descr MXALPS)
     (tags MXALPS)
@@ -3932,7 +3932,7 @@
       (net 29 "Net-(D33-Pad2)"))
   )
 
-  (module canadian_footprints:Mx_Alps_100-dualside (layer F.Cu) (tedit 59986325) (tstamp 5A80A582)
+  (module canadian_footprints:Mx_Alps_100-dualside (layer F.Cu) (tedit 59986325) (tstamp 5E86206F)
     (at 132.08 119.38)
     (descr MXALPS)
     (tags MXALPS)
@@ -4614,7 +4614,7 @@
       (net 13 "Net-(D13-Pad2)"))
   )
 
-  (module canadian_footprints:Mx_Alps_100-dualside (layer F.Cu) (tedit 59986325) (tstamp 5A80A478)
+  (module canadian_footprints:Mx_Alps_100-dualside (layer F.Cu) (tedit 59986325) (tstamp 5E861CF8)
     (at 132.08 81.28)
     (descr MXALPS)
     (tags MXALPS)
@@ -4676,7 +4676,7 @@
       (net 12 "Net-(D12-Pad2)"))
   )
 
-  (module canadian_footprints:Mx_Alps_100-dualside (layer F.Cu) (tedit 59986325) (tstamp 5A80A465)
+  (module canadian_footprints:Mx_Alps_100-dualside (layer F.Cu) (tedit 59986325) (tstamp 5E861EF4)
     (at 113.03 85.725)
     (descr MXALPS)
     (tags MXALPS)
@@ -6638,13 +6638,13 @@
     )
   )
 
-  (gr_text "modified by Gareth Ellis (github.com/garethellis0)" (at 101.6 97.536 90) (layer B.SilkS) (tstamp 5E854F5B)
+  (gr_text "modified by Gareth Ellis (github.com/garethellis0)" (at 122.555 91.2876 90) (layer B.SilkS) (tstamp 5E8624D2)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
-  (gr_text "modified by Gareth Ellis (github.com/garethellis0)" (at 101.6 97.536 90) (layer F.SilkS)
+  (gr_text "modified by Gareth Ellis (github.com/garethellis0)" (at 122.5042 90.8304 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "rev 1.0W" (at 105.41 130.81 90) (layer B.SilkS) (tstamp 5B826807)
+  (gr_text "rev 1.0W&W" (at 105.41 130.81 90) (layer B.SilkS) (tstamp 5B826807)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
   (gr_text GND (at 203.454 110.236) (layer B.SilkS) (tstamp 5B82472E)
@@ -6671,7 +6671,7 @@
   (gr_text GND (at 200.152 110.236) (layer F.SilkS) (tstamp 5B84BF50)
     (effects (font (size 1 1) (thickness 0.2)) (justify left))
   )
-  (gr_text "rev 1.0W" (at 105.41 74.93 90) (layer F.SilkS)
+  (gr_text "rev 1.0W&W" (at 105.283 74.7014 90) (layer F.SilkS) (tstamp 5E862770)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text "designed by Mattia Dal Ben (https://github.com/mattdibi)" (at 81.788 96.266 90) (layer B.SilkS)
