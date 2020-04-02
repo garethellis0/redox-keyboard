@@ -1,4 +1,4 @@
-update=Mon 30 Mar 2020 01:33:18 PM PDT
+update=Thu 02 Apr 2020 09:10:09 AM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -22,7 +22,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=../../../../../Downloads/redox_rev1.net
+LastNetListRead=redox_rev1.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
