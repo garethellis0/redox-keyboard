@@ -1173,9 +1173,9 @@ F 3 "" H 1100 1000 50  0001 C CNN
 $EndComp
 NoConn ~ 1100 1400
 NoConn ~ 1100 1500
-Text GLabel 1100 1700 0    60   Input ~ 0
+Text GLabel 3000 1700 2    60   Input ~ 0
 row2
-Text GLabel 1100 1600 0    60   Input ~ 0
+Text GLabel 3000 1600 2    60   Input ~ 0
 row1
 Text GLabel 1100 1300 0    60   Input ~ 0
 row0
@@ -1199,8 +1199,6 @@ col1
 Text GLabel 1500 2550 3    60   Input ~ 0
 col0
 NoConn ~ 3000 1800
-NoConn ~ 3000 1700
-NoConn ~ 3000 1600
 NoConn ~ 3000 1000
 Text GLabel 3000 1500 2    60   Input ~ 0
 PROG_SWDIO
@@ -1325,17 +1323,6 @@ SDA2
 Text GLabel 1100 3550 0    60   Input ~ 0
 SCL2
 NoConn ~ 1100 3650
-$Comp
-L redox_rev1-rescue:Core51822B-core51822b U_RIGHT1
-U 1 1 5B82A47C
-P 2050 1500
-F 0 "U_RIGHT1" H 2050 2387 60  0000 C CNN
-F 1 "Core51822B" H 2050 2281 60  0000 C CNN
-F 2 "redox_w_footprints:MY-YJ-14015-Module" H 2050 1600 60  0001 C CNN
-F 3 "" H 2050 1600 60  0001 C CNN
-	1    2050 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4450 1800 4450 1850
 Wire Wire Line
@@ -1660,17 +1647,6 @@ F 3 "" H 2050 3950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L redox_wired:ProMicro U_LEFT2
-U 1 1 5E7DC5DE
-P 6100 5600
-F 0 "U_LEFT2" H 6100 6437 60  0000 C CNN
-F 1 "ProMicro" H 6100 6331 60  0000 C CNN
-F 2 "redox_w_footprints:ArduinoProMicro" V 7150 3100 60  0001 C CNN
-F 3 "" V 7150 3100 60  0001 C CNN
-	1    6100 5600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0115
 U 1 1 5E7F4053
 P 5400 5350
@@ -1716,7 +1692,6 @@ NoConn ~ 5400 5950
 NoConn ~ 5400 6050
 NoConn ~ 5400 6150
 NoConn ~ 6800 5050
-NoConn ~ 6800 5250
 NoConn ~ 6800 5450
 NoConn ~ 6800 5550
 NoConn ~ 6800 5650
@@ -1735,4 +1710,33 @@ Wire Wire Line
 	7150 5350 6800 5350
 Connection ~ 4950 5550
 Connection ~ 5100 5450
+Text GLabel 5350 4450 0    60   Input ~ 0
+row4
+$Comp
+L redox_wired:ProMicro U_LEFT2
+U 1 1 5E7DC5DE
+P 6100 5600
+F 0 "U_LEFT2" H 6100 6437 60  0000 C CNN
+F 1 "ProMicro" H 6100 6331 60  0000 C CNN
+F 2 "redox_w_footprints:ArduinoProMicro" V 7150 3100 60  0001 C CNN
+F 3 "" V 7150 3100 60  0001 C CNN
+	1    6100 5600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6800 5250
+$Comp
+L redox_rev1-rescue:Core51822B-core51822b U_RIGHT1
+U 1 1 5B82A47C
+P 2050 1500
+F 0 "U_RIGHT1" H 2050 2387 60  0000 C CNN
+F 1 "Core51822B" H 2050 2281 60  0000 C CNN
+F 2 "redox_w_footprints:MY-YJ-14015-Module" H 2050 1600 60  0001 C CNN
+F 3 "" H 2050 1600 60  0001 C CNN
+	1    2050 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 1600 0    60   Input ~ 0
+row1
+Text GLabel 1100 1700 0    60   Input ~ 0
+row2
 $EndSCHEMATC
